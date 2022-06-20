@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title>Ekran Paylasimi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<style>
+  .size-card1{
+    margin-left: 200px;
+  }
+
+</style>
+<body>
+<!-- Title & header of demo aplication. -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#0092ca;">
+  <img class="ml-5 mr-5" style="width: auto; height: 100px"
+       src="/static/images/2740173.png" />
+  <a class="navbar-brand ml-5 mr-5" href="#">Welcome to A Demo for messaging in WebRTC</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav" style="justify-content:right;">
+    <ul class="navbar-nav ml-5 mr-5">
+      <li class="nav-item active ml-5"  >
+        <a class="nav-link ml-5" href="index.html">Ana Sayfa</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- <div> -->
+
+<!-- <h3 style="position: relative; left: 10px;">Welcome <br />
+</h3>
+</div>
+<a href="index.html">Anasayfa</a> -->
+
+<!-- Other person's screen will show up here -->
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="card size-card1" style="width: 90vh; height: 90vh;">
+        <div class="card-body">
+          <h5 class="card-title">Other Person's Screen</h5>
+          <video style="width: 90vh; height: 90vh;" id="remoteVideo"
+                 poster="/static/images/35124701.png" autoplay></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="card" style="width: 50vh; height: 50vh; margin-left: auto">
+        <div class="card-body">
+          <h5 class="card-title">Your Screen</h5>
+          <video  style="width: 50vh; height: 50vh;" id="localVideo"
+                  poster="/static/images/29560695.png" autoplay muted></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div>
+  <h3 style="margin: 5px">Other Person's Screen</h3>
+  <video style="width: 90vh; height: 90vh;" id="remoteVideo"
+         poster="https://img.icons8.com/dusk/64/000000/monitor.png" autoplay></video>
+</div> -->
+
+<!-- Your screen will show up here. -->
+<!-- <div>
+  <h3 style="margin: 5px">Your Screen</h3>
+  <video  style="width: 50vh; height: 50vh;" id="localVideo"
+          poster="https://img.icons8.com/dusk/64/000000/monitor.png" autoplay muted></video>
+</div> -->
+
+<!-- Button to leave Screen Sharing. -->
+<div class="box mt-5" style="margin-left: 570px;">
+  <button id="leaveButton" class="btn btn-outline-danger">Leave Screen Sharing</button>
+</div>
+
+<script type="text/javascript" src="screenshare.js?reloads=true"></script>
+
+</body>
+</html>
